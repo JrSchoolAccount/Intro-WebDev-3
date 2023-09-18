@@ -1,5 +1,6 @@
-document.getElementById("btn").addEventListener("click", changeText);
+const myBtn = document.getElementById("btn");
+const myText = document.getElementById("text")
 
-function changeText() {
-    document.getElementById("text").innerHTML = "Goodbye World";
-}
+myBtn.addEventListener("click", () => {
+    myText.innerHTML = "Goodbye World";
+});
